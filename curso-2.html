@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curso 2</title>
+</head>
+<body>
+    <div>
+        <!-- tag videoo --> 
+        <!-- controls serve para o controle do video -->
+        <video width="320" height="240" controls>
+            <source src="/img-video-audio/cidade.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div>
+     <!-- tag audio -->
+        <audio controls>
+            <source src="img-video-audio/music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- figure e figurecaption -->
+    <div>
+        <figure>
+            <img src="img-video-audio/ricefield.jpg" alt="Campo de arroz">
+            <figcaption>Um lindo campo de arroz</figcaption>
+        </figure>
+    </div>
+
+    <!-- required e placeholder -->
+    <!-- required faz um campo ser obrigatorio a ser preenxido  -->
+    <!-- placehoder é as coisas escritas dentro do input  -->
+     <!-- autofocus = ja deixa selecionado o input pra quando o usuario entrar na pagina -->
+    <form action="#">
+        <label for="#">Nome:</label>
+        <input type="text" name="name" required placeholder="Digite seu nome" autofocus> 
+        <label for="#">Email:</label>
+        <input type="email" name="email" required placeholder="Digite seu email">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- details e summary -->
+     <!-- é aquela seta que depois de aperdada da mais informações sobre o assumto -->
+    <details open="open">
+        <summary>Cachorro</summary>
+        <p>É um mamifero de 4 patas que é domestico</p>
+    </details>
+
+    <!-- DATALIST -->
+    <!-- como se fosse um select mas tem alto complemento -->
+    <input list="animais" name="animal">
+    <datalist id="animais">
+        <option value="Cachorro"></option>
+        <option value="Gato"></option>
+        <option value="Cavalo"></option>
+        <option value="Elefante"></option>
+    </datalist>
+        
+    <!-- Profress -->
+    <p>Barra de loading</p>
+    <progress></progress>
+
+
+
+
+</body>
+</html>
